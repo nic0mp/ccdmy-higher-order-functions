@@ -38,3 +38,4 @@ const bigNumbers = [100, 200, 300, 400, 500];
 
 // Create the smallNumbers array below
 const smallNumbers = bigNumbers.map(num => num/100);
+console.log(smallNumbers)
