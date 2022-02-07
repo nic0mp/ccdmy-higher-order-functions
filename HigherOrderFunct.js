@@ -116,3 +116,11 @@ console.log(startsWithS);
 // Provide .reduce with an argument of a callback function. The callback function has two parameters. 
 // The first parameter is accumulator and the second parameter is currentValue.
 // Log the value of newSum to the console to see the return value of calling .reduce() on newNumbers.
+// Add a second argument of 10 to .reduce().
+const newNumbers = [1, 3, 5, 7];
+const newSum = newNumbers.reduce((accumulator,currentValue) => {
+  console.log(accumulator);
+  console.log(currentValue);
+  return accumulator + currentValue
+},10) ;
+console.log(newSum)
