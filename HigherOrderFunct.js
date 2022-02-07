@@ -16,8 +16,10 @@ console.log(is2p2.name);
 //  .forEach() method
 const fruits = ["mango", "papaya", "pineapple", "apple"];
 
-// Iterate over fruits below
+// Iterate over the fruits array to log I want to eat a plus the name of each fruit to 
+// the console. For example, I want to eat a mango
 fruits.forEach((produceItem) => console.log(`I want to eat a ${produceItem}`));
+
 // output:
 // I want to eat a mango
 // I want to eat a papaya
@@ -39,6 +41,8 @@ const animals = [
 ];
 
 // Create the secretMessage array below
+// Use .map() to create a new array that contains the first character of each 
+// string in the animals array. Save the new array to a const variable named secretMessage.
 const secretMessage = animals.map((animal) => animal[0]);
 
 console.log(secretMessage.join(""));
@@ -46,6 +50,8 @@ console.log(secretMessage.join(""));
 const bigNumbers = [100, 200, 300, 400, 500];
 
 // Create the smallNumbers array below
+// Use .map() to divide all the numbers in bigNumbers by 100. Save the returned values to a 
+// variable declared with const called smallNumbers.
 const smallNumbers = bigNumbers.map((num) => num / 100);
 console.log(smallNumbers);
 
@@ -89,13 +95,19 @@ const longFavoriteWords = favoriteWords.filter(word => {
 // .findIndex()
 const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
 
+// Invoke .findIndex() on the animals array to find the index of the element that has the value 
+// 'elephant' and save the returned value to a const variable named foundAnimal.
+
 const foundAnimal = animals.findIndex(animalIndex => {
     return animalIndex === 'elephant';
 });
 console.log(foundAnimal);
 // output: 7
 
+// Call .findIndex() on the animals array and return the index of the first element that starts with 's'.
+// Assign the returned value to a const variable named startsWithS.
 const startsWithS = animals.findIndex(animalIndex => {
     return animalIndex[0] === 's'
 });
-console.log(startsWithS)
+console.log(startsWithS);
+// output: 3
