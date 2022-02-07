@@ -85,3 +85,17 @@ const longFavoriteWords = favoriteWords.filter(word => {
   });
   console.log(longFavoriteWords)
 //   output: [ 'nostalgia', 'hyperbole', 'esoteric' ]
+
+// .findIndex()
+const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+
+const foundAnimal = animals.findIndex(animalIndex => {
+    return animalIndex === 'elephant';
+});
+console.log(foundAnimal);
+// output: 7
+
+const startsWithS = animals.findIndex(animalIndex => {
+    return animalIndex[0] === 's'
+});
+console.log(startsWithS)
