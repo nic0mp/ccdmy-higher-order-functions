@@ -111,3 +111,8 @@ const startsWithS = animals.findIndex(animalIndex => {
 });
 console.log(startsWithS);
 // output: 3
+
+// .reduce() Method
+// Provide .reduce with an argument of a callback function. The callback function has two parameters. 
+// The first parameter is accumulator and the second parameter is currentValue.
+// Log the value of newSum to the console to see the return value of calling .reduce() on newNumbers.
