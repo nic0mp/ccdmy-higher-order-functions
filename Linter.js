@@ -25,3 +25,10 @@ for (word of storyWords) {
         basicallyCount +=1;
     }
 }
+
+let sentences=0;
+storyWords.forEach(word => {
+  if(word[word.length-1] === '.' || word[word.length-1] === '!') {
+    sentences+=1;
+  }
+})
