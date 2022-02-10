@@ -31,4 +31,11 @@ storyWords.forEach(word => {
   if(word[word.length-1] === '.' || word[word.length-1] === '!') {
     sentences+=1;
   }
-})
+});
+
+console.log("Story Words Count",  storyWords.length);
+console.log("Sentence Count", sentences)
+console.log('Really Count', reallyCount)
+console.log('Very Count', veryCount)
+console.log('Basically Count', basicallyCount)
+console.log(betterWords.join(" "))
