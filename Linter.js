@@ -16,4 +16,12 @@ let reallyCount=0;
 let veryCount=0;
 let basicallyCount=0;
 
-for 
+for (word of storyWords) {
+    if(word === 'really') {
+        reallyCount += 1;
+    } else if(word === 'very') {
+        veryCount += 1;
+    } else if(word === 'basically') {
+        basicallyCount +=1;
+    }
+}
